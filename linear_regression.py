@@ -22,6 +22,11 @@ class LinearRegressionScratch(d2l.Module):
     def configure_optmizers(self):
         SGD([self.w, self.b], self.lr)
 
+@d2l.add_to_class(d2l.Trainer)
+def fit_epoch(self):
+    self.model.train()
+
+
 class SGD(d2l.HyperParameters):
     """Minibatch stochastic gradient descent."""
     def __init__(self, params, lr):
@@ -30,9 +35,11 @@ class SGD(d2l.HyperParameters):
     def step(self):
         for param in self.params:
             param -= self.lr * param.grad
+
+    #This function does not interest me now, it will be only important when talking about backpropagation
     
     def zero_grad(self):
         for param in self.params:
             if param.grad is not None:
                 param.grad.zero_()
-                
+
