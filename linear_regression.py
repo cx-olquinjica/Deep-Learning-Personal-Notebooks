@@ -35,8 +35,6 @@ class SGD(d2l.HyperParameters):
     def step(self):
         for param in self.params:
             param -= self.lr * param.grad
-
-    #This function does not interest me now, it will be only important when talking about backpropagation
     
     def zero_grad(self):
         for param in self.params:
