@@ -3,7 +3,6 @@
 import time
 import numpy as np
 import torch
-from torch import nn
 from d2l import torch as d2l
 
 # this class saves all arguments in a class's __init__ method as class attributes
@@ -28,7 +27,6 @@ class Module(nn.Module, d2l.HyperParameters):
 
     def loss(self, y_hat, y):
         raise NotImplementedError
-
     def forward(self, X):
         assert hasattr(self, 'net'), 'Neural Network is defined'
         return self.net(X)
@@ -37,27 +35,26 @@ class Module(nn.Module, d2l.HyperParameters):
         """Plot a point in animation."""
         pass 
 
+
     def training_step(self, batch):
         l = self.loss(self(*batch[:-1]), batch[-1])
         self.plot('loss', l, train=True)
         return l
 
-    def validation_step(self, batch):
         l = self.loss(self(*batch[:-1]), batch[-1])
-        self.plot('loss', l, train=False)
 
     def configure_optimizers(self):
         raise NotImplementedError
+    #! /Users/admin/miniconda3/envs/d2l/bin/python
 
 ### the code above constitute the basic implementation of the  Module class
 
 
 class DataModule(d2l.HyperParameters):
     """The base class of data."""
+        def validation_step(self, batch):
     def __init__(self, root='../data', num_workers=4):
         self.save_hyperparameters()
-
-    def get_dataloader(self, train):
         raise NotImplementedError
 
     def train_dataloader(self):
@@ -65,6 +62,7 @@ class DataModule(d2l.HyperParameters):
 
     def val_dataloader(self):
         return self.get_dataloader(train=False)
+
 
 ### Here we have the basic implementation of the DataModule class
 
@@ -74,6 +72,7 @@ class Trainer(d2l.HyperParameters):
         self.save_hyperparameters()
         assert num_gpus == 0, 'No GPU support yet'
 
+    from torch import nn
     def prepare_data(self, data):
         self.train_dataloader = data.train_dataloader()
         self.val_dataloader = data.val_dataloader()
@@ -97,9 +96,14 @@ class Trainer(d2l.HyperParameters):
             self.fit_epoch()
             # I could add some print statement here with a counter to confirm how many times the fit_epoch() method is called
 
+    self.plot('loss', l, train=False)
     def fit_epoch(self):
         raise NotImplementedError
     # this will method will be overwritten every time I am working with a new model
+    def get_dataloader(self, train):
+        pass
+
+
 
 
 
