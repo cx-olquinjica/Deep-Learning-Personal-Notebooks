@@ -64,4 +64,34 @@ Python built-in range, but returns an array."""
 print()
 f = np.arange(10).reshape(2, 5)
 print(f)
+print()
+
+g = np.arange(24).reshape(2, 3, 4) # 3d array
+print("3d array:", g)
+print()
+
+# basic operations
+
+a = np.array([20, 30, 40, 50])
+b = np.arange(4)
+c = a - b
+print("substraction:", c)
+print()
+print("power:", b**2)
+print()
+print(" testing if @ and dot produce the same result:")
+print("@: ", a @ b)
+print()
+print("dot:", a.dot(b))
+print()
+print(a @ b == a.dot(b))
+print()
+
+# multidimenstion array can have one index per axis
+
+# these indices are given in a tuple separated by commas
+
+i = np.arange(12).reshape(4, 3)
+print(i)
+
 
