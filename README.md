@@ -35,8 +35,11 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
     - Transformers
     - Good chance to check and contribute to the only ChatGPT-like [ChatRWKV](https://github.com/BlinkDL/ChatRWKV) 100% RNN language model 
 15) Final Project (probably the biggest having into account how Large Language Models have become so popular), it will be divided in different sub-projects:
-    - Transformer in NLP
-        - Machine Translation
+    - [JarJarChat](https://en.wikipedia.org/wiki/Jar_Jar_Binks)
+    - [Yoda](https://en.wikipedia.org/wiki/Yoda)
+    - [Binks](https://en.wikipedia.org/wiki/Jar_Jar_Binks)
+    - Transformer in NLP: check and contribute to [Project Masakhane](https://www.masakhane.io)
+        - Machine Translation: [Kimbundo-Umbundu-Chokwe-Kikongo](https://en.wikipedia.org/wiki/Kimbundu)
         - Document Summarization
         - Document Generation
     - Transformers in Computer Vision
@@ -63,4 +66,6 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
 ## Important Note: 
 
 Because of how relevant __Transformers__ have become in current machine learning research, the relative positions of the topics highlighted by __boldface__ notation will probably change, because I will dedicate a huge amount of time working with transformers, and don't intend to neglect these areas. 
+
+As I side note, I will spend more time working on __Natural Language Processing__ projects because I inspire to contribute to __increase the digital representation of african languages__. 
 
