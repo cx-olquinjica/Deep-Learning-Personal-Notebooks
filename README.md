@@ -1,6 +1,18 @@
 # Deep-Learning-Personal-Notebooks
 This collection of notebooks is based on the [Dive into Deep Learning Book](https://d2l.ai/index.html). It was created with the intention of serving as a reference when working on future projects. All of the notes are written in [Pytorch](https://pytorch.org) and the [d2l library](https://github.com/d2l-ai/d2l-en/tree/master/d2l)
 
+> Ralph Emerson Waldo:
+"Nothing great was ever achieved without enthusiasm..." 
+   
+> Steven Wright: 
+"Everywhere is walking distance if you have the time..."
+   
+> Lee Hanney:
+"Exercise to stimulate, not to annihilate. The world wasn't formed in a day, and neither were we. set small goals and build upon them.."
+
+> "The Man who loves walking will walk further than the man who loves the destination. When you fall in love with the journey, everything else takes care of itself. Trip, fall, pick yourself up. Get up, learn, do it over again..."
+
+
 ## Study Plan: 
 
 1) Basics:
