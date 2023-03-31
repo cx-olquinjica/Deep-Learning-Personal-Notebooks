@@ -39,7 +39,7 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
     - [YodaChat](https://en.wikipedia.org/wiki/Yoda)
     - [BinksChat](https://en.wikipedia.org/wiki/Jar_Jar_Binks)
     - Transformer in NLP: check and contribute to [Project Masakhane](https://www.masakhane.io)
-        - Machine Translation: [Kimbundo-Umbundu-Chokwe-Kikongo](https://en.wikipedia.org/wiki/Kimbundu)
+        - Machine Translation: [Kimbundu-Umbundu-Chokwe-Kikongo](https://en.wikipedia.org/wiki/Kimbundu)
         - Document Summarization
         - Document Generation
     - Transformers in Computer Vision
