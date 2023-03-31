@@ -1,5 +1,5 @@
 # Deep-Learning-Personal-Notebooks
-This collection of notebooks is based on the [Dive into Deep Learning Book](https://d2l.ai/index.html). It was created with the intention of serving as a reference when working on future projects. All of the notes are written in Pytorch and the [d2l library](https://github.com/d2l-ai/d2l-en/tree/master/d2l)
+This collection of notebooks is based on the [Dive into Deep Learning Book](https://d2l.ai/index.html). It was created with the intention of serving as a reference when working on future projects. All of the notes are written in [Pytorch](https://pytorch.org) and the [d2l library](https://github.com/d2l-ai/d2l-en/tree/master/d2l)
 
 ## Study Plan: 
 
@@ -33,6 +33,7 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
 14) NLP: Applications [d2l.ai chapter 16](hdoh) 
     - RNN 
     - Transformers
+    - Good chance to check and contribute to the only ChatGPT-like [ChatRWKV](https://github.com/BlinkDL/ChatRWKV) 100% RNN language model 
 15) Final Project (probably the biggest having into account how Large Language Models have become so popular), it will be divided in different sub-projects:
     - Transformer in NLP
         - Machine Translation
