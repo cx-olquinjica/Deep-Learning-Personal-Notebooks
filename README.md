@@ -52,6 +52,7 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
     - [BinksChat](https://en.wikipedia.org/wiki/Jar_Jar_Binks)
     - Transformer in NLP: check and contribute to [Project Masakhane](https://www.masakhane.io)
         - Machine Translation: [Kimbundu-Umbundu-Chokwe-Kikongo](https://en.wikipedia.org/wiki/Kimbundu)
+            - (Future Iteration) Create a ChatApp with a bot that can talk to the users to help them practice their language skills
         - Document Summarization
         - Document Generation
     - Transformers in Computer Vision
