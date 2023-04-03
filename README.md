@@ -47,9 +47,6 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
     - Transformers
     - Good chance to check and contribute to the only ChatGPT-like [ChatRWKV](https://github.com/BlinkDL/ChatRWKV) 100% RNN language model 
 15) Final Project (probably the biggest having into account how Large Language Models have become so popular), it will be divided in different sub-projects:
-    - [JarJarChat](https://en.wikipedia.org/wiki/Jar_Jar_Binks)
-    - [YodaChat](https://en.wikipedia.org/wiki/Yoda)
-    - [BinksChat](https://en.wikipedia.org/wiki/Jar_Jar_Binks)
     - Transformer in NLP: check and contribute to [Project Masakhane](https://www.masakhane.io)
         - Machine Translation 
         - Document Summarization
