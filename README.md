@@ -45,6 +45,8 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
 14) NLP: Applications [d2l.ai chapter 16](hdoh) 
     - RNN 
     - Transformers
+        * additional resource: [Transformers United Stanford Course](https://www.youtube.com/playlist?list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM)
+        * additional resource: [NLP and Transformers hugging face](https://huggingface.co/course/chapter1/1)
     - Good chance to check and contribute to the only ChatGPT-like [ChatRWKV](https://github.com/BlinkDL/ChatRWKV) 100% RNN language model 
 15) Final Project (probably the biggest having into account how Large Language Models have become so popular), it will be divided in different sub-projects:
     - Transformer in NLP: check and contribute to [Project Masakhane](https://www.masakhane.io)
