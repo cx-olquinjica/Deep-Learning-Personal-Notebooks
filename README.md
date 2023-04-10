@@ -77,4 +77,3 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
 ## Important Note: 
 
 Because of how relevant __Transformers__ have become in current machine learning research, the relative positions of the topics highlighted by __boldface__ notation will probably change, because I will dedicate a huge amount of time working with transformers, and don't intend to neglect these areas. 
-# weights-data
