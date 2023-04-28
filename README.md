@@ -35,6 +35,8 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
 6) [Deep Learning: Adaptive Computation and Machine Learning Chapter IX](dhhfh)
     - Convolutional Neural Networks a Maths perspective
 7) Computational Performance [d2l.ai chapter 13](hdhlh)
+    - When talking about parallelization, do not forget to check the multiple implementation of GPU as shown on the AlexNet paper.
+    - Implementation [cuda-convnet](https://code.google.com/archive/p/cuda-convnet/)
 8) Computer Vision [d2l.ai chapter 14](hdoh)
 9) Final Project
 10) Recurrent Neural Networks [d2l.ai chapter 9-10](hdoh) 
