@@ -73,6 +73,9 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
     - Checkout this paper LLMs + Recommender Systems [GPT4Rec: A Generative Framework for Personalized Recommendation and User Interests Interpretation](https://arxiv.org/pdf/2304.03879.pdf)
 19) __Reinforcement Learning__ [d2l.ai chapter 17](hdoh)
     - Companion: [Course By David Silver from DeepMind](https://www.davidsilver.uk/teaching/)
+    - Reinforcement Learning Recommender System: 
+        - [Reinforcement Learning-based Recommender System](https://dl.acm.org/doi/pdf/10.1145/3543846)
+        - [Off-Policy Actor-critic for Recommender Systems](https://dl.acm.org/doi/pdf/10.1145/3523227.3546758)
 20) __Gaussian Processes__ [d2l.ai chapter 18](hdoh)
     - Why study Gaussian Processes??
         * They provide a function space perspective of modelling, which makes understanding a variety of model classes, including deep neural networks, much more approachable
