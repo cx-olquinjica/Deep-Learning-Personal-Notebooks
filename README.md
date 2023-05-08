@@ -66,6 +66,7 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
     - __This can come after the CNN final project__
     - Small project
     - [GANformer = GAN + Transformers](https://github.com/dorarad/gansformer)
+    - [Video: NIPS 2016-Generative Adversarial Networks by Ian Goodfellow](https://www.youtube.com/watch?v=AJVyzd0rqdc)
 18) __Recommender Systems__ [d2l.ai chapter 21](hdoh)
     - __This can come before the Transformer final project__
     - Small Project + Website
