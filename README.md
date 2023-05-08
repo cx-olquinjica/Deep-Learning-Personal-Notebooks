@@ -69,7 +69,7 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
 18) __Recommender Systems__ [d2l.ai chapter 21](hdoh)
     - __This can come before the Transformer final project__
     - Small Project + Website
-    - Checkout this paper LLMs + Recommender Systems [GPT4Rec: A Generative Framework for Personalized Recommendation and User Interests Iterpretation](https://arxiv.org/pdf/2304.03879.pdf)
+    - Checkout this paper LLMs + Recommender Systems [GPT4Rec: A Generative Framework for Personalized Recommendation and User Interests Interpretation](https://arxiv.org/pdf/2304.03879.pdf)
 19) __Reinforcement Learning__ [d2l.ai chapter 17](hdoh)
     - Companion: [Course By David Silver from DeepMind](https://www.davidsilver.uk/teaching/)
 20) __Gaussian Processes__ [d2l.ai chapter 18](hdoh)
