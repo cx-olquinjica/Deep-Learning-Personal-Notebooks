@@ -30,7 +30,7 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
         - Deep FeedForward Networks
 4) [Deep Learning: Adaptive Computation and Machine Learning Chapter VII](dhhfh)  :white_check_mark:
     - Regularization for Deep Learning(apply to CNNs)
-5) Optimization Algorithm [d2l.ai chapter 12](hfkh) 
+5) Optimization Algorithm [d2l.ai chapter 12](hfkh) :white_check_mark:
     - Companion: [Deep Learning: Adaptive Computation and Machine Learning Chapter VIII](dhhfh)
 6) [Deep Learning: Adaptive Computation and Machine Learning Chapter IX](dhhfh) :white_check_mark:
     - Convolutional Neural Networks a Maths perspective
