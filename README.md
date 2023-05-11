@@ -15,34 +15,34 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
 
 ## Study Plan: 
 
-1) Basics:
+1) Basics:  :white_check_mark:
     - Linear Neural Networks
     - Multilayer Perceptrons
     - Builder's guide
-2) Convolutional Neural Networks
+2) Convolutional Neural Networks   :soon:
     - LeNet ->> DenseNet
-    - CNNs for Audio and Text (Maybe)
-3) Review Probability and Information Theory [Deep Learning: Adaptive Computation and Machine Learning Chapter III](hlsjlj) [another link](https://c.d2l.ai/berkeley-stat-157/units/probability.html)
+    - CNNs for Audio and Text (Maybe) 
+3) Review Probability and Information Theory [Deep Learning: Adaptive Computation and Machine Learning Chapter III](hlsjlj) [another link](https://c.d2l.ai/berkeley-stat-157/units/probability.html) :white_check_mark:
 
         - Estimators, Bias and Variance 
         - Maximum Likelihood Estimation
         - Bayesian Statistics
         - Deep FeedForward Networks
-4) [Deep Learning: Adaptive Computation and Machine Learning Chapter VII](dhhfh)
+4) [Deep Learning: Adaptive Computation and Machine Learning Chapter VII](dhhfh)  :white_check_mark:
     - Regularization for Deep Learning(apply to CNNs)
 5) Optimization Algorithm [d2l.ai chapter 12](hfkh) 
     - Companion: [Deep Learning: Adaptive Computation and Machine Learning Chapter VIII](dhhfh)
-6) [Deep Learning: Adaptive Computation and Machine Learning Chapter IX](dhhfh)
+6) [Deep Learning: Adaptive Computation and Machine Learning Chapter IX](dhhfh) :white_check_mark:
     - Convolutional Neural Networks a Maths perspective
-7) Computational Performance [d2l.ai chapter 13](hdhlh)
+7) Computational Performance [d2l.ai chapter 13](hdhlh) :soon:
     - When talking about parallelization, do not forget to check the multiple implementation of GPU as shown on the AlexNet paper.
     - Implementation [cuda-convnet](https://code.google.com/archive/p/cuda-convnet/)
-8) Computer Vision [d2l.ai chapter 14](hdoh)
-9) Final Project
+8) Computer Vision [d2l.ai chapter 14](hdoh) :soon:
+9) Final Project :soon:
 10) Recurrent Neural Networks [d2l.ai chapter 9-10](hdoh) 
     - Companion: [Deep Learning: Adaptive Computation and Machine Learning Chapter X](hodj)
 11) Final Project
-12) Attention Mechanisms and Transformers [d2l.ai chapter 11](hdoh) 
+12) Attention Mechanisms and Transformers [d2l.ai chapter 11](hdoh) :chart:
 13) Natural Language Processing: Pretraining [d2l.ai chapter 15](hdoh) 
 14) NLP: Applications [d2l.ai chapter 16](hdoh) 
     - RNN 
@@ -59,7 +59,7 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
         - Diffusion Models
         - Video Understanding
         - Nice time to reconsider GAN + Transformers!
-16) __Hyperparameter Optimization__ [d2l.ai chapter 19](hdoh)
+16) __Hyperparameter Optimization__ [d2l.ai chapter 19](hdoh) :soon:
 
     Obs: The study of this topic can come after CNNs or before the CNNs final project, I want to start training large models from scratch, and I pretend to have on my arsenal all the most important trades of the field. The earlier I am exposed to them, the better. 
 17) __Generative Adversarial Networks__ [d2l.ai chapter 20](hdoh)
