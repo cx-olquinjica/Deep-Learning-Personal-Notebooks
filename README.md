@@ -19,7 +19,7 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
     - Linear Neural Networks
     - Multilayer Perceptrons
     - Builder's guide
-2) Convolutional Neural Networks   :soon:
+2) Convolutional Neural Networks   :white_check_mark:
     - LeNet ->> DenseNet
     - CNNs for Audio and Text (Maybe) 
 3) Review Probability and Information Theory [Deep Learning: Adaptive Computation and Machine Learning Chapter III](hlsjlj) [another link](https://c.d2l.ai/berkeley-stat-157/units/probability.html) :white_check_mark:
@@ -37,7 +37,7 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
 7) Computational Performance [d2l.ai chapter 13](hdhlh) :soon:
     - When talking about parallelization, do not forget to check the multiple implementation of GPU as shown on the AlexNet paper.
     - Implementation [cuda-convnet](https://code.google.com/archive/p/cuda-convnet/)
-8) Computer Vision [d2l.ai chapter 14](hdoh) :soon:
+8) Computer Vision [d2l.ai chapter 14](hdoh) :white_check_mark:
 9) Final Project :soon:
 10) Recurrent Neural Networks [d2l.ai chapter 9-10](hdoh) 
     - Companion: [Deep Learning: Adaptive Computation and Machine Learning Chapter X](hodj)
