@@ -62,7 +62,7 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
 16) __Hyperparameter Optimization__ [d2l.ai chapter 19](hdoh) :soon:
 
     Obs: The study of this topic can come after CNNs or before the CNNs final project, I want to start training large models from scratch, and I pretend to have on my arsenal all the most important trades of the field. The earlier I am exposed to them, the better. 
-17) __Generative Adversarial Networks__ [d2l.ai chapter 20](hdoh)
+17) __Generative Adversarial Networks__ [d2l.ai chapter 20](hdoh)  :white_check_mark:
     - __This can come after the CNN final project__
     - Small project
     - [GANformer = GAN + Transformers](https://github.com/dorarad/gansformer)
