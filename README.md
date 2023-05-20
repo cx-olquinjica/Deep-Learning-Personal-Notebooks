@@ -82,6 +82,15 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
         * They have an extraordinary range of applications where they are SOTA, including __active learning__, __hyperparameter learning__, __auto-ML__, and __spatiotemporal regression__
         * Over the last few years, algorithmic advances have made Gaussian processes increasingly scalable and relevant, harmonizing with deep learning through frameworks such as [GPyTorch](https://gpytorch.ai)
 
+## Citation
+```bibtex
+@article{zhang2021dive,
+    title={Dive into Deep Learning},
+    author={Zhang, Aston and Lipton, Zachary C. and Li, Mu and Smola, Alexander J.},
+    journal={arXiv preprint arXiv:2106.11342},
+    year={2021}
+}
+```
 
 ## Important Note: 
 
