@@ -41,7 +41,7 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
 9) Final Project :soon:
 10) Recurrent Neural Networks [d2l.ai chapter 9-10](hdoh) :white_check_mark: 
     - Companion: [Deep Learning: Adaptive Computation and Machine Learning Chapter X](hodj)
-11) Final Project
+11) Final Project :white_check_mark:
 12) Attention Mechanisms and Transformers [d2l.ai chapter 11](hdoh) :white_check_mark:
 13) Natural Language Processing: Pretraining [d2l.ai chapter 15](hdoh) 
 14) NLP: Applications [d2l.ai chapter 16](hdoh) 
