@@ -48,7 +48,6 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
     - RNN 
     - Transformers
 15) Final Project (probably the biggest having into account how Large Language Models have become so popular), it will be divided in different sub-projects:
-    - Transformer in NLP: check and contribute to [Project Masakhane](https://www.masakhane.io)
         - Machine Translation 
         - Document Summarization
         - Document Generation
