@@ -1,7 +1,11 @@
 #! /Users/admin/miniconda3/envs/huggingface/bin/python
 
 import torch
+import datasets
 from transformers import AdamW, AutoTokenizer, AutoModelForSequenceClassification
+from transformers import TrainingArguments
+from transformers import Trainer
+from datasets import load_dataset
 
 
 # data preparation
@@ -31,4 +35,20 @@ loss = model(**batch).loss
 
 loss.backward()
 optimizer.step()
+
+# downloading dataset from the hub 
+
+raw_dataset = load_dataset("glue", "mrpc")
+print(raw_dataset)
+
+# raw_dataset returns a dict which contains 
+# a train, test, and validation tsst
+# load_dataset downloads and caches the dataset at ~/.cache/huggingface/datasets. 
+
+raw_train_dataset = raw_dataset["train"]
+print(raw_train_dataset[0])
+
+
+# preprocss a dataset
+
 
