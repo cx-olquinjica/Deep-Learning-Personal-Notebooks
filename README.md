@@ -55,7 +55,6 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
         - Nice time to reconsider GAN + Transformers!
 16) __Hyperparameter Optimization__ [d2l.ai chapter 19](hdoh) :soon:
 
-    Obs: The study of this topic can come after CNNs or before the CNNs final project, I want to start training large models from scratch, and I pretend to have on my arsenal all the most important trades of the field. The earlier I am exposed to them, the better. 
 17) __Generative Adversarial Networks__ [d2l.ai chapter 20](hdoh)  :white_check_mark:
     - __This can come after the CNN final project__
     - Small project
@@ -86,6 +85,3 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
 }
 ```
 
-## Important Note: 
-
-Because of how relevant __Transformers__ have become in current machine learning research, the relative positions of the topics highlighted by __boldface__ notation will probably change, because I will dedicate a huge amount of time working with transformers, and don't intend to neglect these areas. 
