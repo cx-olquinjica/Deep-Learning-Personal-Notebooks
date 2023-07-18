@@ -45,7 +45,7 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
 12) Attention Mechanisms and Transformers [d2l.ai chapter 11](hdoh) :white_check_mark:
 13) Natural Language Processing: Pretraining [d2l.ai chapter 15](hdoh) :white_check_mark:
 14) Natural Language Processing: Applications [d2l.ai chapter 16](hdoh) :white_check_mark:
-15) Final Project (probably the biggest having into account how Large Language Models have become so popular), it will be divided in different sub-projects:
+15) Final Project :white_check_mark:
         - Machine Translation 
         - Document Summarization
         - Document Generation
