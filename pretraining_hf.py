@@ -2,6 +2,8 @@
 
 import torch
 import datasets
+import evaluate
+import numpy as np
 from transformers import AdamW, AutoTokenizer, AutoModelForSequenceClassification
 from transformers import DataCollatorWithPadding
 from transformers import Trainer
@@ -93,12 +95,12 @@ print({k: v.shape for k, v in batch.items()})
 # Training
 
 
-training_args = TrainingArguments("test-trainer")
+training_args = TrainingArguments("test-trainer", use_mps_device=True)
 
 # model = AutoModelForSequenceClassification.from_pretrained(checkpoint, num_labels=2)
 
-
-trainer = Trainer(
+# this is the implementation without the evaluation criteria
+"""trainer = Trainer(
     model,
     training_args,
     train_dataset=tokenized_datasets["train"],
@@ -106,4 +108,45 @@ trainer = Trainer(
     tokenizer=tokenizer,
 )
 
+trainer.train()"""
+
+################################################################################################################
+
+# Evaluation
+
+# predictions = trainer.predict(tokenized_datasets["validation"])
+# print(predictions.predictions.shape, predictions.label_ids.shape)
+
+# preds = np.argmax(predictions.predictions, axis=-1)
+
+# metric = evaluate.load("glue", "mrpc")
+
+# print(metric.compute(predictions=preds, references=predictions.label_ids))
+
+
+def compute_metrics(eval_preds):
+    metric = evaluate.load("glue", "mrpc")
+    logits, labels = eval_preds
+    predictions = np.argmax(logits, axis=-1)
+    return metric.compute(predictions=predictions, references=labels)
+
+training_args = TrainingArguments("test-trainer", evaluation_strategy="epoch", use_mps_device=True)
+
+trainer = Trainer(
+    model,
+    training_args,
+    train_dataset=tokenized_datasets["train"],
+    eval_dataset=tokenized_datasets["validation"],
+    data_collator=data_collator,
+    tokenizer=tokenizer,
+    compute_metrics=compute_metrics,
+)
+
 trainer.train()
+
+
+# to any curious soul out there, these are the results: 
+
+{'eval_loss': 0.733721911907196, 'eval_accuracy': 0.8357843137254902, 'eval_f1': 0.8854700854700854, 'eval_runtime': 3.4403, 'eval_samples_per_second': 118.595, 'eval_steps_per_second': 14.824, 'epoch': 3.0}
+{'train_runtime': 254.6969, 'train_samples_per_second': 43.204, 'train_steps_per_second': 5.406, 'train_loss': 0.37109726273502747, 'epoch': 3.0}
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1377/1377 [04:14<00:00,  5.41it/s]
