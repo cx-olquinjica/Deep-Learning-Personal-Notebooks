@@ -4,6 +4,7 @@ import torch
 import datasets
 from transformers import AdamW, AutoTokenizer, AutoModelForSequenceClassification
 from transformers import DataCollatorWithPadding
+from transformers import Trainer
 from transformers import TrainingArguments
 from transformers import Trainer
 from datasets import load_dataset
@@ -15,7 +16,7 @@ tokenizer = AutoTokenizer.from_pretrained(checkpoint)
 
 # model preparation
 
-model = AutoModelForSequenceClassification.from_pretrained(checkpoint)
+model = AutoModelForSequenceClassification.from_pretrained(checkpoint, num_labels=2)
 
 # inputs
 sequences = [
@@ -84,3 +85,25 @@ print([len(x) for x in samples["input_ids"]])
 
 batch = data_collator(samples)
 print({k: v.shape for k, v in batch.items()})
+
+
+#############################################################################################################
+
+
+# Training
+
+
+training_args = TrainingArguments("test-trainer")
+
+# model = AutoModelForSequenceClassification.from_pretrained(checkpoint, num_labels=2)
+
+
+trainer = Trainer(
+    model,
+    training_args,
+    train_dataset=tokenized_datasets["train"],
+    eval_dataset=tokenized_datasets["validation"],
+    tokenizer=tokenizer,
+)
+
+trainer.train()
