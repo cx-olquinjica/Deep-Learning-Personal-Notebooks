@@ -3,6 +3,7 @@
 import torch
 import datasets
 from transformers import AdamW, AutoTokenizer, AutoModelForSequenceClassification
+from transformers import DataCollatorWithPadding
 from transformers import TrainingArguments
 from transformers import Trainer
 from datasets import load_dataset
@@ -40,7 +41,6 @@ optimizer.step()
 
 raw_dataset = load_dataset("glue", "mrpc")
 print(raw_dataset)
-
 # raw_dataset returns a dict which contains 
 # a train, test, and validation tsst
 # load_dataset downloads and caches the dataset at ~/.cache/huggingface/datasets. 
@@ -49,16 +49,38 @@ raw_train_dataset = raw_dataset["train"]
 print(raw_train_dataset[0])
 
 
-# preprocss a dataset
+# load a a dataset from the hub
 
-tokenized_dataset = tokenizer(
-        raw_datasets["train"]["sentence1"],
-        raw_datasets["train"]["sentence2"],
-        padding=True,
-        truncation=True,
-        return_tensors="pt"
-        ]
+def tokenize_function(example):
+    """This function takes a dictionary 
+    (like the items of our dataset) and 
+    returns a new dictionary with the keys 
+    input_ids, attention_mask, and token_type_ids."""
 
-# although this is a very intuitive process, and works very well once you know the data structure of your dataset
-# it is not very scalable, and that is not so good, if
-        
+    return tokenizer(example["sentence1"], example["sentence2"], truncation=True)
+
+# apply the tokenize function on all our dataset at once
+
+tokenized_datasets = raw_dataset.map(tokenize_function, batched=True)
+print(tokenized_datasets)
+
+
+# Dynamic padding
+
+# while defining the tokenize_function didnt use padding=True
+# because padding an entire dataset is not computationally 
+# efficient. Now I will define a method to pad by batch instead
+
+data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
+print(data_collator)
+
+# getting a few samples
+
+samples = tokenized_datasets["train"][:8]
+samples = {k: v for k, v in samples.items() if k not in ["idx", "sentence1", "sentence2"]}
+print([len(x) for x in samples["input_ids"]])
+
+# refactored
+
+batch = data_collator(samples)
+print({k: v.shape for k, v in batch.items()})
