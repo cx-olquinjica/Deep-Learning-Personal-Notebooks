@@ -51,4 +51,14 @@ print(raw_train_dataset[0])
 
 # preprocss a dataset
 
+tokenized_dataset = tokenizer(
+        raw_datasets["train"]["sentence1"],
+        raw_datasets["train"]["sentence2"],
+        padding=True,
+        truncation=True,
+        return_tensors="pt"
+        ]
 
+# although this is a very intuitive process, and works very well once you know the data structure of your dataset
+# it is not very scalable, and that is not so good, if
+        
