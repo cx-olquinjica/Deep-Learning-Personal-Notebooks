@@ -64,7 +64,7 @@ This collection of notebooks is based on the [Dive into Deep Learning Book](http
     - __This can come before the Transformer final project__
     - Small Project + Website
     - Checkout this paper LLMs + Recommender Systems [GPT4Rec: A Generative Framework for Personalized Recommendation and User Interests Interpretation](https://arxiv.org/pdf/2304.03879.pdf)
-19) __Reinforcement Learning__ [d2l.ai chapter 17](hdoh)
+19) __Reinforcement Learning__ [d2l.ai chapter 17](hdoh) :white_check_mark:
     - Companion: [Course By David Silver from DeepMind](https://www.davidsilver.uk/teaching/)
     - Reinforcement Learning Recommender System: 
         - [Reinforcement Learning-based Recommender System](https://dl.acm.org/doi/pdf/10.1145/3543846)
