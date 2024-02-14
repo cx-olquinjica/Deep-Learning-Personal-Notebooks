@@ -21,7 +21,8 @@ class Person:
 
 class Manager(Person): 
     def __init__(self, name, pay): 
-        Person.__init__(self, name, 'mgr', pay) # customizing the constructor
+        super().__init__( name, 'mgr', pay) # customizing the constructor/ best method
+        #Person.__init__(self, name, 'mgr', pay) another way to call/customize the init method
 
     def giveRaise(self, percent, bonus=.10): 
         Person.giveRaise(self, percent + bonus)
