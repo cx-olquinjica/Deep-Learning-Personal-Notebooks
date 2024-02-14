@@ -16,7 +16,8 @@ class Person:
         self.pay = int(self.pay) * (1 + percent)
 
     def __str__(self): 
-        return '[Person: %s, %s]' % (self.name, self.pay)
+        #return '[Person: %s, %s]' % (self.name, self.pay)
+        return f'[Person: {self.name}, {self.pay}]'
 
 
 class Manager(Person): 
