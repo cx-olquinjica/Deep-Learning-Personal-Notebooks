@@ -28,6 +28,28 @@ class Manager(Person):
     def giveRaise(self, percent, bonus=.10): 
         Person.giveRaise(self, percent + bonus)
 
+
+# Operator Overloading
+class Number: 
+    def __init__(self, start): 
+        self.data = start
+    def __sub__(self, other): 
+        return Number(self.data - other) 
+
+# User-defined iterables 
+
+class Squares: 
+    def __init__(self, start, stop): 
+        self.value = start - 1 
+        self.stop = stop 
+    def __iter__(self):                    # get iterable object on iter 
+        return self 
+    def __next__(self): 
+        if self.value == self.stop: 
+            raise StopIteration 
+        self.value += 1 
+        return self.value ** 2 
+
 if __name__ == '__main__': 
     bob = Person('Bob Smith') 
     sue = Person('Sue Jones', job='dev', pay=1000000)
@@ -40,4 +62,11 @@ if __name__ == '__main__':
     tom.giveRaise(.10)                      # Runs custom version 
     print(tom.lastName())                   # Runs inherited method 
     print(tom)                              # Runs inherited __repr__
+    X = Number(5)
+    Y = X - 2                               # Here Y is new Number instance
+    print(Y.data)
+
+
+    for i in Squares(1, 5):                # for calls iter which calls __iter__ 
+        print(i, end=' ')                  # Each iteration calls __next__
 
