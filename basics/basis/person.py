@@ -1,8 +1,5 @@
 #! /Users/admin/miniconda3/envs/d2l/bin/python
 
-
-
-
 class Person: 
     def __init__(self, name, job=None, pay=0):
         self.name = name 
