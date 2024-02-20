@@ -120,6 +120,12 @@ def display_time():
     print(time)
 
 
+# Underrstaing @d2l_add_to_class decorator in d2l 
+
+def add_to_class(Class):                 # When add_to_class is called with a class as an argument, it returns the wrapper function.
+    def wrapper(obj):                    # Then, when the wrapper function is called with an object (typically a method) as its argument, it dynamically adds that object as an attribute to the class Class. 
+        setattr(Class, obj.__name__, obj) # The attribute's name is determined by obj.__name__, which is the name of the method being added.
+    return wrapper
 
 if __name__ == '__main__': 
     my_func = outer_function("Hello World!")          # This won't execute the inner function will only save it in the my_func
