@@ -1,7 +1,7 @@
 #! /Users/admin/miniconda3/envs/d2l/bin/python
 
 """ Important Concepts: 
-    First Class Fucntions: allows us to treat functions as any other object in python. 
+    First Class Functions: allows us to treat functions as any other object in python. 
     That means we can pass functions as arguments to other functions, return functions
     and we can assign functions to variables. 
 
@@ -13,6 +13,7 @@
     kind of functionality and then returns another function. It does all of this 
     without altering the source code of the original function that was passed in.
     """
+
 def outer_function(msg): 
     """ A function to higlight the inner working behind closure."""
     message = msg                                      # Free variable
@@ -45,6 +46,20 @@ class decorator_class(object):
         print('call method executed this before {}'.format(self.original_function.__name__))
         return self.original_function(*args, **kwargs)
 
+# Decorator with argurments 
+
+def prefix_decorator(prefix): 
+    """ highlights decorators that take arguments @decorator(argument)"""
+    def decorator_function(original_function): 
+        def wrapper_function(*args, **kwargs): 
+            print(prefix, 'Executed Before', original_function.__name__)
+            result = original_function(*args, **kwargs)
+            print(prefix, 'Executed after', original_function.__name__, '\n')
+            return result 
+        return wrapper_function
+    return decorator_function
+
+
 # Practical Example: 
 
 def my_logger(original_func): 
@@ -67,6 +82,21 @@ def my_timer(original_func):
         return result 
     return wrapper 
 
+# Understanding the @property decorator
+
+class Circle: 
+    def __init__(self, radius): 
+        self._radius = radius
+    
+    @property 
+    def radius(self): 
+        return self._radius 
+    @radius.setter
+    def radius(self, value):
+        if value <= 0:
+            raise ValueError("Radius must be positive")
+        self._radius = value
+
 
 def display(): 
     print("display function ran!")
@@ -77,7 +107,8 @@ def display_basic():
 
 #@decorator_function_with_arguments
 #@decorator_class
-@my_logger
+#@my_logger
+@prefix_decorator('LOG:')
 def display_info(name, age): 
     print(f'display info ran with arguments {name} and {age}')
 
@@ -87,6 +118,7 @@ def display_time():
     from datetime import datetime 
     time = datetime.now()
     print(time)
+
 
 
 if __name__ == '__main__': 
@@ -103,5 +135,7 @@ if __name__ == '__main__':
     display_info('angle', '56')
     display()
     display_time()
+    C = Circle(5) 
+    print(C.radius)
 
 
